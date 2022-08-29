@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Abuelo Bootstrap</title>
+
+    <!--CSS de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--CSS propio para personalizar otras cosas-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="navbar">
+        <div class="container-fluid">
+            <!--Logo del navbar-->
+            <a class="navbar-brand" href="#">
+                <img src="img/logoDBD.png" alt="Logo de DBD" height="100" width="auto">
+            </a>
+
+            <!--Un botón para que muestre el menú de la navbar-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Links del navbar-->
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li style="margin: 15px" class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li style="margin: 15px" class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li style="margin: 15px" class="nav-item"><a class="nav-link" href="#">DLC</a></li>
+                    <li style="margin: 15px" class="nav-item"><a class="nav-link" href="#">Register</a></li>
+                    <li style="margin: 15px" class="nav-item"><a class="nav-link" href="#">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--CARROUSEL-->
+    <div class="carousel slide" id="mainSlider" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slide1.jpg" alt="" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="img/slide2.jpg" alt="" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="img/slide3.png" alt="" class="d-block w-100">
+            </div>
+        </div>
+    </div>
+
+    <!--RIBBON-->
+    <div id="ribbon" class="container-fluid">
+        <div id="text-frame" class="container w-50 pl-5 rounded-lg">
+            <!--En esta capa va imagen y texto de ribbon-->
+            <div class="row align-items-center">
+                <!---Imagen de ribbon-->
+                <div class="col-sm p-3">
+                    <img src="img/forum_icon_8cfbea0547.png" class="w-75 mx-auto d-block"
+                        alt="Imagen de trabajo en equipo">
+                </div>
+                <!--Texto de ribbon-->
+                <div class="col-sm p-3 text-light text-center">
+                    <p class="text-light">
+                        "We have to work as a team, I need you to survive so that I can survive!"
+                    </p>
+                    <h4 class="text-shadow">
+                        Death is not an escape
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SEPARADOR RIBBON-->
+    <div id="separator">
+        <div class="content bg-dark"></div>
+
+    </div>
+
+    <!--DLC-->
+    <div class="dlc-cards">
+        <div class="container-md p-5">
+            <div class="row pt-5">
+                <h3 class="text-center pb-5 pt-5 h1 text-light">See you in the fog...</h3>
+            </div>
+
+            <div class="row">
+                <!-- Carta 1 -->
+                <div class="col-sm">
+                    <div class="card w-100 mb-5 card-border :hover" style="width: 18rem;">
+                        <img src="img/dlc.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <!-- Carta 2 -->
+                <div class="col-sm">
+                    <div class="card w-100 mb-5 card-border :hover" style="width: 18rem;">
+                        <img src="img/bg2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <!-- Carta 3 -->
+                <div class="col-sm">
+                    <div class="card w-100 mb-5 card-border :hover" style="width: 18rem;">
+                        <img src="img/slide2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <!-- MORE INFO -->
+                <div class="row py-5">
+                    <div class="col">
+                        <h1 class="text-center" style="color: var(--bs-dark)">Available on...</h1>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center avai" style="color: var(--bs-dark)" text>
+                    <div class="col-2"><a href="#">Steam</a></div>
+                    <div class="col-2"><a href="#">Epic Games</a></div>
+                    <div class="col-1"><a href="#">XBOX</a></div>
+                    <div class="col-1"><a href="#">PS5</a></div>
+                    <div class="col-1"><a href="#">Nintendo</a></div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--SEPARADOR POSTFOG-->
+    <div id="separador-postfog">
+        <div class="content bg-dark"></div>
+    </div>
+
+
+    <!--PERKS-->
+    <div id="perks" class="px-5 pb-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center text-white text-shadow py-5 mt-5">Why to stop using some perks or use others?</h2>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 justify-content-md-center align-content-md-center">
+                <!-- PERK1 -->
+                <div class="col-sm">
+                    <img class="w-100 perk :hover" src="img/forum_icon_8cfbea0547.png" alt="">
+                    <div class="text-center text-white">
+                        <span class="perkname h-5 p-2">PERKNAME</span>
+                    </div>
+                </div>
+                <!-- PERK1 -->
+                <div class="col-sm">
+                    <img class="w-100 perk :hover" src="img/forum_icon_8cfbea0547.png" alt="">
+                    <div class="text-center text-white">
+                        <span class="perkname h-5 p-2">PERKNAME</span>
+                    </div>
+                </div>
+                <!-- PERK1 -->
+                <div class="col-sm">
+                    <img class="w-100 perk :hover" src="img/forum_icon_8cfbea0547.png" alt="">
+                    <div class="text-center text-white">
+                        <span class="perkname h-5 p-2">PERKNAME</span>
+                    </div>
+                </div>
+                <!-- PERK4 -->
+                <div class="col-sm">
+                    <img class="w-100 perk :hover" src="img/forum_icon_8cfbea0547.png" alt="">
+                    <div class="text-center text-white">
+                        <span class="perkname  h-5 p-2">PERKNAME</span>
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="row py-5 justify-content-md-center align-content-md-center">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <a href="#" class="link-dark">
+                            <button class="btn btn-warning btn-lg rounded-pill border-5 px-5 ">
+                                More perks...
+                            </button>
+                        </a>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+                <!-- Separator footer -->
+                <div id="separator-perks-footer">
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--PLAY-->
+    <div id="play">
+        <div class="container-sm p-5">
+            <div class="row">
+                <h3 class="text-center h1">
+                    Thank you for supporting this horrible game!
+                </h3>
+            </div>
+<!-- Presentador de tarjetas -->
+            <div class="row justify-content-center align-items-center">
+                <div class="col-3 d-none d-md-block">
+                    <img src="img/bbq.png" alt="" class="w-100">
+                </div>
+<!-- Se hace dos columnas en el grid. Una ocupará espacio para otras dos
+columnas más pequeñas -->
+                <div class="col-9">
+                    <!-- Fila para hacer las primeras dos columnas -->
+                    <div class="row">
+                        <!-- CARD 1 -->
+                        <div class="col p-3">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                  <div class="col-md-6">
+                                    <img src="img/slide1.jpg" class="w-100 img-fluid rounded-start" alt="...">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <!-- CARD 2 -->
+                        <div class="col p-3">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                  
+                                  <div class="col-md-6">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-md-6">
+                                    <img src="img/slide1.jpg" class="w-100 img-fluid rounded-start" alt="...">
+                                  </div>
+
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+                        <div class="row">
+                            <!-- CARD 3 -->
+                            <div class="col p-3">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                      <div class="col-md-6">
+                                        <img src="img/slide1.jpg" class="w-100 img-fluid rounded-start" alt="...">
+                                      </div>
+                                      <div class="col-md-6">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <!-- CARD 4 -->
+                            <div class="col p-3">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row g-0">
+                                      
+                                      <div class="col-md-6">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-md-6">
+                                        <img src="img/slide1.jpg" class="w-100 img-fluid rounded-start" alt="...">
+                                      </div>
+
+                                    </div>
+                                  </div>
+                            </div>
+                            </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <div id="footer" class="p-5">
+        <div class="container w-50 pt-5">
+            <div class="row justify-content-md-center align-content-md-center">
+                <div class="col text-center">
+                    <a href="#">
+                        <button class="btn btn-lg rounded-pill btn-warning w-10 p-3 shadow-sm">
+                            Forums
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-md-center py-5">
+                <div class="col text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates minus sint accusamus mollitia earum suscipit, quos expedita neque. Quia fugit a facilis veniam voluptate ullam doloremque harum quaerat totam autem.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto unde accusamus sint excepturi doloribus quisquam est eius officia aliquam quas, placeat nobis facere repellendus provident expedita error maxime sed explicabo.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit dolorum obcaecati consequatur sed neque quisquam maiores aperiam magni alias fugiat pariatur ipsum ullam aut assumenda dignissimos impedit, blanditiis cupiditate atque!
+                    </p>
+                    <p>
+                        Todos los derechos no reservados. Page by Abue Hackerman!
+                    </p>                
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    
+    <!--  CDN: <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
+    <script src="js/popper.min.js"></script>
+    <!--Script de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
+
+
+
+
+</body>
+
+</html>
